@@ -90,7 +90,7 @@ function SetupProblem {
 
 if [ ! "$1" ]; then
   nx=100
-  echo " ~ No dimensions passed, assumed (nx,ny) = (100,100)"
+  echo " ~ No dimensions passed, assumed nx = 100"
 else
   nx=$1
 fi

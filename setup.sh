@@ -7,9 +7,6 @@
 # $1 nx
 # =========================
 
-# --- includes ---
-source datastructures.sh
-
 # --- Globals and such ---
 
 PS3=" ~ Select a problem: "

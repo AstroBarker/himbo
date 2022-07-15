@@ -7,9 +7,9 @@ function ComputeTimestep {
     exit
   fi
 
-  vmin=$( Div ${um[0]} ${urho[0]} )
+  local vmin=$( Div ${um[0]} ${urho[0]} )
   for ((i=0; i<$3; i++)); do
-    v=$( Div ${um[$i]} ${urho[$i]} )
+    local v=$( Div ${um[$i]} ${urho[$i]} )
     if [ "$( echo "$v < $vmin" | bc )" == 1 ]; then
       vmin=$v
     fi

@@ -1,2 +1,9 @@
+#!/bin/bash
+
+source math.sh
 source setup.sh
-echo ${grid[@]}
+source utilities.sh
+
+CFL=0.5
+
+ComputeTimestep $CFL $dx $nx
